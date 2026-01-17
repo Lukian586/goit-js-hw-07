@@ -29,7 +29,7 @@ const gallery = document.querySelector(".gallery");
 
 function gall(arr) {
   return arr.map((i) => 
-    `<li><img src="${i.url}" alt="${i.alt}" width="400)"/></li>`
+    `<li><img src="${i.url}" alt="${i.alt}" width="400"/></li>`
   ).join("");
 };
 

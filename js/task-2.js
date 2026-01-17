@@ -29,15 +29,20 @@ const gallery = document.querySelector(".gallery");
 
 function gall(arr) {
   return arr.map((i) => 
-    `<li><img src="${i.url}" alt="${i.alt}" width="300"/></li>`
+    `<li><img src="${i.url}" alt="${i.alt}" width="400)"/></li>`
   ).join("");
 };
 
 gallery.insertAdjacentHTML("beforeend", gall(images));
 
   gallery.style.display = "flex";
-  gallery.style.flexDirection = "column";
-  gallery.style.gap = "8px";
+gallery.style.flexDirection = "row";
+gallery.style.flexWrap = "wrap";
+gallery.style.gap = "8px";
+gallery.style.listStyle = "none";
+gallery.style.alignItems = "center";
+gallery.style.justifyContent = "center";
+
   
 
 

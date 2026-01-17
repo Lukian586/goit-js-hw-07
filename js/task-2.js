@@ -36,12 +36,11 @@ function gall(arr) {
 gallery.insertAdjacentHTML("beforeend", gall(images));
 
   gallery.style.display = "flex";
-gallery.style.flexDirection = "row";
-gallery.style.flexWrap = "wrap";
+gallery.style.flexDirection = "column";
 gallery.style.gap = "8px";
-gallery.style.listStyle = "none";
-gallery.style.alignItems = "center";
-gallery.style.justifyContent = "center";
+
+
+
 
   
 
